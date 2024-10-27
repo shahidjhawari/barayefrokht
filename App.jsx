@@ -1,25 +1,14 @@
+// App.js
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import ProductList from './pages/ProductList';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello World</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <ProductList />
+    </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  text: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-});
 
 export default App;

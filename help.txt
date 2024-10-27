@@ -1,1 +1,2 @@
 com.br.barayefrokht
+./gradlew build --warning-mode all
